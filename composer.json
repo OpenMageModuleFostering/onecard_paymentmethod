@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Onecard_Paymentmethod",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Onecard integration for magento",
+    "authors": [
+    {
+        "name": "Moe",
+        "email": "moe@shopgo.me"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
