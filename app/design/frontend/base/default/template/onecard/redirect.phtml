@@ -28,12 +28,31 @@ $onecard_return_url = $site_domain_name.'onecardpay/payment/response';
 /********************************/
 $onecard_keyword = Mage::getStoreConfig('payment/onecardpay/onecard_keyword',Mage::app()->getStore());
 $onecard_transkey = Mage::getStoreConfig('payment/onecardpay/onecard_transkey',Mage::app()->getStore());
-$payment_gateway_url = Mage::getStoreConfig('payment/onecardpay/payment_gateway_url',Mage::app()->getStore());
+//$payment_gateway_url = Mage::getStoreConfig('payment/onecardpay/payment_gateway_url',Mage::app()->getStore());
 $language = Mage::getStoreConfig('payment/onecardpay/language',Mage::app()->getStore());
 $currency = Mage::getStoreConfig('payment/onecardpay/currency',Mage::app()->getStore());
 $merchant_id = Mage::getStoreConfig('payment/onecardpay/merchant_id',Mage::app()->getStore());
 
+$test_mode = Mage::getStoreConfig('payment/onecardpay/test',Mage::app()->getStore());
+$payment_gateway_url = '';
+
+if($test_mode) {
+	$payment_gateway_url = 'http://onecard.n2vsb.com/customer/integratedPayment.html';
+} else {
+	$payment_gateway_url = 'https://www.onecard.net/customer/integratedPayment.html';
+}
+
 //exit();
+
+/***
+ * 
+ * Staging environment URL http://onecard.n2vsb.com/customer/integratedPayment.html
+ * Production environment URL https://www.onecard.net/customer/integratedPayment.html
+ * 
+ * 
+ * 
+ * **/
+
 ?>
 
 <form name="onecardpaymentform" action="<?php echo $payment_gateway_url;?>" method="post" />
