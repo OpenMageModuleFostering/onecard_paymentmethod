@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Onecard_Paymentmethod</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license>OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>Onecard integration for magento</summary>
     <description>it allow users to use Onecard payment gateway in magento</description>
-    <notes>First onecard extension release</notes>
+    <notes>Fix issues related to invoices ( automatically create invoices and change orders states )</notes>
     <authors><author><name>Moe</name><user>Ghashim</user><email>moe@shopgo.me</email></author></authors>
-    <date>2012-08-02</date>
-    <time>11:30:28</time>
-    <contents><target name="magelocal"><dir name="Onecard"><dir name="Onecardpay"><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Currencyoptions.php" hash="fc83780f82046c35823e74b1cd05b3f0"/><file name="Languageoptions.php" hash="c133d13eb64e99d7677bc817182c6c6c"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="50e632324654e42c438a831d96863bce"/></dir><dir name="Model"><file name="Pay.php" hash="fa02a9eaf39a0dab41874e1f919b788c"/></dir><dir name="controllers"><file name="PaymentController.php" hash="45217d3fc2d2a1bb9b63b85442fb3491"/></dir><dir name="etc"><file name="config.xml" hash="016825c62621241a5a1a7fd7998e0242"/><file name="system.xml" hash="bb99cdc5e10da236c6183996a2863f36"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="onecard"><file name="redirect.phtml" hash="b07cc83face7508d89c52daf11502067"/><file name="success.phtml" hash="857f02535c3b6908da9de15013cf4df5"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Onecard_Onecardpay.xml" hash="9104f0d72530a39a89284678fa446130"/></dir></target></contents>
+    <date>2012-08-16</date>
+    <time>12:51:08</time>
+    <contents><target name="magelocal"><dir name="Onecard"><dir name="Onecardpay"><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Currencyoptions.php" hash="fc83780f82046c35823e74b1cd05b3f0"/><file name="Languageoptions.php" hash="c133d13eb64e99d7677bc817182c6c6c"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="50e632324654e42c438a831d96863bce"/></dir><dir name="Model"><file name="Pay.php" hash="fa02a9eaf39a0dab41874e1f919b788c"/></dir><dir name="controllers"><file name="PaymentController.php" hash="167001210de55740127c747a87ea282f"/></dir><dir name="etc"><file name="config.xml" hash="016825c62621241a5a1a7fd7998e0242"/><file name="system.xml" hash="bb99cdc5e10da236c6183996a2863f36"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="onecard"><file name="redirect.phtml" hash="b07cc83face7508d89c52daf11502067"/><file name="success.phtml" hash="857f02535c3b6908da9de15013cf4df5"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Onecard_Onecardpay.xml" hash="9104f0d72530a39a89284678fa446130"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
